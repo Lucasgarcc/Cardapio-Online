@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <title>Cardapio Online</title>
+</head>
+<body>
+ <!--Header-->
+  <header class="w-full h-{420px} bg-black bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center p-16">
+      <img src="./img/logo.svg" alt="logo Hamburger" class="w-80 h-60 p-1 rounded-full shadow-lg hover:scale-110 duration-200">
+      <h1 class="text-3xl mt-4 mb-2 font-bold pb-8 text-white font-Poppins">Food Burguer</h1>
+      <address class= " text-white font-medium pb-6 not-italic from-neutral-100 font-sans">Rua dev 20, Guariba - SP</address>
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span" >
+        <span class=" font-sans text-white font-medium ">Seg á Dom -19:00 às 22:00</span>
+      </div>
+    </div>
+  </header>
+ <!-- close Header-->
+  <section>
+    <h2 class="text-stone-800 text-2xl font-bold text-center uppercase mt-16 m-6 md:text-3xl  underline underline-offset-4 font-Poppins">Conheça nosso menu</h2>
+      <!--Menu-->
+      <main>
+      <!--Section Hamburgueres-->  
+      <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
+        <li class="flex gap-2">
+          <img src="/img/hamb-1.png" alt="Hamburger Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-lg font-Poppins">Hamburger Smash</p>
+            <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <div class="flex items-center justify-between mt-3 gap-2">
+              <span class="font-bold text-lg font-sans">R$ 20.90</span>
+              <button class="bg-gray-900 px-5 rounded add-to-btn"
+              data-name="hamburger smash">
+                <i class="fa fa-cart-plus text-lg text-white "></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="flex gap-2">
+          <img src="/img/hamb-2.png" alt="Hamburger Duplo Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-lg font-Poppins">Hamburger Duplo Smash</p>
+            <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <div class="flex items-center justify-between mt-3 gap-2">
+              <span class="font-bold text-lg font-sans">R$ 32.90</span>
+              <button class="bg-gray-900 px-5 rounded add-to-btn"
+              data-name="hamburger duplo smash">
+                <i class="fa fa-cart-plus text-lg text-white "></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="flex gap-2">
+          <img src="/img/hamb-3.png" alt="Hamburger Classic" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-lg font-Poppins">Hamburger Classic</p>
+            <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <div class="flex items-center justify-between mt-3 gap-2">
+              <span class="font-bold text-lg font-sans">R$ 35.90</span>
+              <button class="bg-gray-900 px-5 rounded add-to-btn"
+              data-name="hamburger classic">
+                <i class="fa fa-cart-plus text-lg text-white "></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="flex gap-2">
+          <img src="/img/hamb-4.png" alt="Hamburger Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-lg font-Poppins">Hamburger Salad</p>
+            <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <div class="flex items-center justify-between mt-3 gap-2">
+              <span class="font-bold text-lg font-sans">R$ 30.90</span>
+              <button class="bg-gray-900 px-5 rounded add-to-btn"
+              data-name="hamburger salad">
+                <i class="fa fa-cart-plus text-lg text-white "></i>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- close Section Hamburgueres--> 
+      </main>
+  
+    <section>
+    <!-- Section Bebidas-->
+    <div class="max-auto max-w-7x1 px-2 my-2">
+      <h2 class="text-stone-800 text-2xl font-bold text-center uppercase mt-16 m-6 md:text-3xl underline underline-offset-4 font-Poppins">Bebidas</h2>
+    </div>
+    <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
+      <li class="flex gap-2 w-full">
+        <img src="/img/refri-1.png" alt="Lata de coca-cola" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div class="w-full">
+          <p class="font-bold text-lg font-Poppins">Coca-Cola</p>
+          <p class="text-sm font-normal font-sans">Coca bem gelada.</p>
+          <div class="flex items-center justify-between mt-3 gap-2">
+            <span class="font-bold text-lg font-sans">R$ 4.50</span>
+            <button class="bg-gray-900 px-5 rounded add-to-btn"
+            data-name="coca-cola">
+              <i class="fa fa-cart-plus text-lg text-white "></i>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="flex gap-2 w-full">
+        <img src="/img/refri-2.png" alt="Lata de guaraná antartica" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div  class="w-full">
+          <p class="font-bold text-lg font-Poppins">Guaraná antartica</p>
+          <p class="text-sm font-normal font-sans">Guaraná bem gelado.</p>
+          <div class="flex items-center justify-between mt-3 gap-2">
+            <span class="font-bold text-lg font-sans">R$ 3.90</span>
+            <button class="bg-gray-900 px-5 rounded add-to-btn"
+            data-name="guaraná">
+              <i class="fa fa-cart-plus text-lg text-white "></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- close Section Bebidas-->
+    </section>  
+    <!-- close Menu-->
+  </section>
+      <!-- Modal Cart-->
+    <section class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-[600px]">
+        <h2 class="uppercase font-medium text-2xl text-center mb-5 font-Poppins"><strong>Meu Carrinho</strong></h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col">
+          <p class="font-medium uppercase m-2 font-sans">Endereço de entrga: 
+            <input type="text" placeholder="Digite seu endereço" class="w-full border-2 rounded my-1"
+            id="address" >
+          </p>
+          <span class="text-red-700 font-medium hidden m-2 font-sans">Digite seu endereço completo!</span>
+          <p class="font-medium uppercase m-2 font-sans">Total: 
+            <span id="cart-total" class="font-semibold ml-1">0.00</span>
+          </p>
+          <div class="flex items-center justify-between mt-5">
+            <button id="close-modal-btn" class="font-semibold ml-1 font-sans">Fechar</button>
+            <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded font-sans">Finalizar Pedido</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- close Modal Cart-->  
+    <!-- Footer-->
+  <footer class="w-full h-20 bg-[#262626] py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button class="flex items-center gap-2 text-white uppercase font-medium font-sans"
+    id="cart-btn">
+      (<span id="cart-count">0</span>)
+      Ver meu carrinho
+      <i class="fa fa-cart-plus text-white"></i>
+    </button>
+  </footer>
+  <!-- close Footer-->
+</body>
+</html>
