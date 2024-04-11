@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <title>Cardapio Online</title>
 </head>
+<!--NÃO ESQUECER DE COLOCAR O FAVICON NO SITE-->
 <body>
  <!--Header-->
   <header class="w-full h-{420px} bg-black bg-home bg-cover bg-center">
@@ -34,7 +35,7 @@
       <!--Section Hamburgueres-->  
       <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
         <li class="flex gap-2">
-          <img src="/img/hamb-1.png" alt="Hamburger Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <img src="./img/hamb-1.png" alt="Hamburger Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
           <div>
             <p class="font-bold text-lg font-Poppins">Hamburger Smash</p>
             <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
@@ -48,7 +49,7 @@
           </div>
         </li>
         <li class="flex gap-2">
-          <img src="/img/hamb-2.png" alt="Hamburger Duplo Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <img src="./img/hamb-2.png" alt="Hamburger Duplo Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
           <div>
             <p class="font-bold text-lg font-Poppins">Hamburger Duplo Smash</p>
             <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
@@ -62,7 +63,7 @@
           </div>
         </li>
         <li class="flex gap-2">
-          <img src="/img/hamb-3.png" alt="Hamburger Classic" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <img src="./img/hamb-3.png" alt="Hamburger Classic" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
           <div>
             <p class="font-bold text-lg font-Poppins">Hamburger Classic</p>
             <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
@@ -76,7 +77,7 @@
           </div>
         </li>
         <li class="flex gap-2">
-          <img src="/img/hamb-4.png" alt="Hamburger Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <img src="./img/hamb-4.png" alt="Hamburger Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
           <div>
             <p class="font-bold text-lg font-Poppins">Hamburger Salad</p>
             <p class="text-sm font-normal font-sans">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
@@ -100,7 +101,7 @@
     </div>
     <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
       <li class="flex gap-2 w-full">
-        <img src="/img/refri-1.png" alt="Lata de coca-cola" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <img src="./img/refri-1.png" alt="Lata de coca-cola" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         <div class="w-full">
           <p class="font-bold text-lg font-Poppins">Coca-Cola</p>
           <p class="text-sm font-normal font-sans">Coca bem gelada.</p>
@@ -114,7 +115,7 @@
         </div>
       </li>
       <li class="flex gap-2 w-full">
-        <img src="/img/refri-2.png" alt="Lata de guaraná antartica" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <img src="./img/refri-2.png" alt="Lata de guaraná antartica" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         <div  class="w-full">
           <p class="font-bold text-lg font-Poppins">Guaraná antartica</p>
           <p class="text-sm font-normal font-sans">Guaraná bem gelado.</p>
@@ -133,7 +134,7 @@
     <!-- close Menu-->
   </section>
       <!-- Modal Cart-->
-    <section class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+    <section class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-[600px]">
         <h2 class="uppercase font-medium text-2xl text-center mb-5 font-Poppins"><strong>Meu Carrinho</strong></h2>
         <div id="cart-items" class="flex justify-between mb-2 flex-col">
@@ -141,7 +142,7 @@
             <input type="text" placeholder="Digite seu endereço" class="w-full border-2 rounded my-1"
             id="address" >
           </p>
-          <span class="text-red-700 font-medium hidden m-2 font-sans">Digite seu endereço completo!</span>
+          <span class="text-red-700 font-medium hidden m-2 font-sans " id="address-warn">Digite seu endereço completo!</span>
           <p class="font-medium uppercase m-2 font-sans">Total: 
             <span id="cart-total" class="font-semibold ml-1">0.00</span>
           </p>
@@ -163,5 +164,6 @@
     </button>
   </footer>
   <!-- close Footer-->
+  <script src="js/app.js"></script>
 </body>
 </html>
