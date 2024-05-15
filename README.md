@@ -27,6 +27,7 @@ Este projeto visa criar um site de cardápio online para a Hambúrgueria Delíci
 
 - HTML
 - CSS
+- Library - Toasyify
 - JavaScript (para interatividade, como botões de pedido)
 - Tailwind-Css
 - Figma
