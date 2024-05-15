@@ -118,19 +118,30 @@ function UpadateCartModal() {
 
 
 // Function remove item do carrinho (cart)
-function removeItemCart(name) {
+function removeItems(e) {
+  if(e.target.classList.contains("remove-btn")){
+    const name = event.target.getAttribute("data-name")
+  removeItemCart(name);
+}
+};
+cartItemsContainer.addEventListener("click", removeItems)
+  
 
+function removeItemCart(name) {
   const index = cart.findIndex(item => item.name == name)
   const item = cart[index]
   index !== -1 ? item : item;
   if ( item.quantity > 1) {
     item.quantity -=1;
-    return UpadateCartModal();
+     UpadateCartModal();
+    return
   ;
   }
   cart.splice(index, 1);
   UpadateCartModal();
 }
+
+
 function checkoutButtonClick() {
   const isOpen = checkRestaurantOpen();
     if(!isOpen){
