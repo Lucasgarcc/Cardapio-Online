@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,17 +24,17 @@
       <h1 class="text-3xl mt-4 mb-2 font-bold pb-8 text-white font-Poppins">Food Burguer</h1>
       <address class= " text-white font-medium pb-6 not-italic from-neutral-100 font-sans">Rua dev 20, Guariba - SP</address>
       <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span" >
-        <span class=" font-sans text-white font-medium ">Seg á Dom -19:00 às 22:00</span>
+        <span class=" font-sans text-white font-medium">Seg á Dom -19:00 às 22:00</span>
       </div>
     </div>
   </header>
  <!-- close Header-->
-  <section>
+  <section id="menu">
     <h2 class="text-stone-800 text-2xl font-bold text-center uppercase mt-16 m-6 md:text-3xl  underline underline-offset-4 font-Poppins">Conheça nosso menu</h2>
       <!--Menu-->
       <main>
       <!--Section Hamburgueres-->  
-      <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
+      <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16">
         <li class="flex gap-2">
           <img src="./img/hamb-1.png" alt="Hamburger Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
           <div>
@@ -42,7 +43,7 @@
             <div class="flex items-center justify-between mt-3 gap-2">
               <span class="font-bold text-lg font-sans">R$ 20.90</span>
               <button class="bg-gray-900 px-5 rounded add-to-btn"
-              data-name="hamburger smash">
+              data-name="Hamburger Smash" data-price="20.90">
                 <i class="fa fa-cart-plus text-lg text-white "></i>
               </button>
             </div>
@@ -56,7 +57,7 @@
             <div class="flex items-center justify-between mt-3 gap-2">
               <span class="font-bold text-lg font-sans">R$ 32.90</span>
               <button class="bg-gray-900 px-5 rounded add-to-btn"
-              data-name="hamburger duplo smash">
+              data-name="Hamburger Duplo Smash" data-price="32.90">
                 <i class="fa fa-cart-plus text-lg text-white "></i>
               </button>
             </div>
@@ -70,7 +71,7 @@
             <div class="flex items-center justify-between mt-3 gap-2">
               <span class="font-bold text-lg font-sans">R$ 35.90</span>
               <button class="bg-gray-900 px-5 rounded add-to-btn"
-              data-name="hamburger classic">
+              data-name="Hamburger Classic" data-price="35.90">
                 <i class="fa fa-cart-plus text-lg text-white "></i>
               </button>
             </div>
@@ -84,7 +85,7 @@
             <div class="flex items-center justify-between mt-3 gap-2">
               <span class="font-bold text-lg font-sans">R$ 30.90</span>
               <button class="bg-gray-900 px-5 rounded add-to-btn"
-              data-name="hamburger salad">
+              data-name="Hamburger Salad" data-price="30.90">
                 <i class="fa fa-cart-plus text-lg text-white "></i>
               </button>
             </div>
@@ -92,11 +93,9 @@
         </li>
       </ul>
       <!-- close Section Hamburgueres--> 
-      </main>
-  
     <section>
     <!-- Section Bebidas-->
-    <div class="max-auto max-w-7x1 px-2 my-2">
+    <div class="max-auto max-w-7x1 px-2 my-2" >
       <h2 class="text-stone-800 text-2xl font-bold text-center uppercase mt-16 m-6 md:text-3xl underline underline-offset-4 font-Poppins">Bebidas</h2>
     </div>
     <ul class=" mx:w-[1200px] grid items-center justify-center grid-cols-1 md:grid-cols-2 md:w-full gap-7 mx-auto max-w-7xl py-8 px-2 mb-16" id="menu">
@@ -108,7 +107,7 @@
           <div class="flex items-center justify-between mt-3 gap-2">
             <span class="font-bold text-lg font-sans">R$ 4.50</span>
             <button class="bg-gray-900 px-5 rounded add-to-btn"
-            data-name="coca-cola">
+            data-name="coca-cola" data-price="4.50">
               <i class="fa fa-cart-plus text-lg text-white "></i>
             </button>
           </div>
@@ -122,7 +121,7 @@
           <div class="flex items-center justify-between mt-3 gap-2">
             <span class="font-bold text-lg font-sans">R$ 3.90</span>
             <button class="bg-gray-900 px-5 rounded add-to-btn"
-            data-name="guaraná">
+            data-name="guaraná" data-price="3.90">
               <i class="fa fa-cart-plus text-lg text-white "></i>
             </button>
           </div>
@@ -132,24 +131,24 @@
     <!-- close Section Bebidas-->
     </section>  
     <!-- close Menu-->
+  </main>
   </section>
       <!-- Modal Cart-->
     <section class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
       <div class="bg-white p-5 rounded-md min-w-[90%] md:min-[600px]">
         <h2 class="uppercase font-medium text-2xl text-center mb-5 font-Poppins"><strong>Meu Carrinho</strong></h2>
-        <div id="cart-items" class="flex justify-between mb-2 flex-col">
-          <p class="font-medium uppercase m-2 font-sans">Endereço de entrga: 
-            <input type="text" placeholder="Digite seu endereço" class="w-full border-2 rounded my-1"
-            id="address" >
-          </p>
-          <span class="text-red-700 font-medium hidden m-2 font-sans " id="address-warn">Digite seu endereço completo!</span>
-          <p class="font-medium uppercase m-2 font-sans">Total: 
-            <span id="cart-total" class="font-semibold ml-1">0.00</span>
-          </p>
-          <div class="flex items-center justify-between mt-5">
-            <button id="close-modal-btn" class="font-semibold ml-1 font-sans">Fechar</button>
-            <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded font-sans">Finalizar Pedido</button>
-          </div>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-medium uppercase m-2 font-sans">Endereço de entrga: 
+          <input type="text" placeholder="Digite seu endereço" class="w-full border-2 rounded my-1"
+          id="address" >
+        </p>
+        <span class="text-red-700 font-medium hidden m-2 font-sans " id="address-warn">Digite seu endereço completo!</span>
+        <p class="font-medium uppercase m-2 font-sans">Total: 
+          <span id="cart-total" class="font-semibold ml-1">0.00</span>
+        </p>
+        <div class="flex items-center justify-between mt-5">
+          <button id="close-modal-btn" class="font-semibold ml-1 font-sans">Fechar</button>
+          <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded font-sans">Finalizar Pedido</button>
         </div>
       </div>
     </section>
@@ -164,6 +163,7 @@
     </button>
   </footer>
   <!-- close Footer-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
