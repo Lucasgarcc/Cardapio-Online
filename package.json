@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@git-emoji/dataset-js": "^0.0.10"
+  }
+}
